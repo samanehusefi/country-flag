@@ -19,7 +19,8 @@
             <span class="absolute inset-y-0 left-0 flex items-center pl-2">
                 <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"></svg>
             </span>
-            <input class="outline-none w-1/2 bg-inherit" placeholder="Search Country..." :type="type" :name="name"  v-model="localModelValue"/>
+            <input class="outline-none w-1/2 bg-inherit" placeholder="Search Country..."
+             :type="type" :name="name"  v-model="localModelValue"/>
         </lable>
     </div>
 </template>
