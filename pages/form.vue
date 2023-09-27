@@ -26,21 +26,9 @@
 
 import { useForm } from 'vee-validate'
 import * as yup from 'yup';
-const isForeign = ref(true)
 
 const schema = yup.object({
     emailSchema:yup.string().required("Please Enter Email").email("Please Enter a Correct Email"),
-
-    // emailSchema: yup.string().test((value, context) => {
-    //     if (isForeign.value) {
-    //         const customCondition = value
-    //         console.log("log==>", value, context)
-    //         return customCondition || context.createError("Please Enter a Correct Email")
-    //     }
-    //     return true
-
-    // }),
-
     firstName: yup.string().min(2).max(100).required(),
     lastName: yup.string().min(10).max(256).required(),
     phoneNumber: yup.string().required().test((value, context) => {
